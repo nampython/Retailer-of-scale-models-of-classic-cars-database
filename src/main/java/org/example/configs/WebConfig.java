@@ -13,12 +13,15 @@ import org.springframework.web.servlet.view.JstlView;
 
 @EnableWebMvc
 @ComponentScans({
+        @ComponentScan(basePackages = "com.example.Excercise1"),
         @ComponentScan(basePackages = "org.example"),
         @ComponentScan(basePackageClasses = OfficeController.class),
-        @ComponentScan(basePackageClasses = Dao.class)
+//        @ComponentScan(basePackageClasses = Dao.class)
 })
 @Configuration
-@Import(value = ContainerBeans.class)
+@Import(value = {
+        ContainerBeans.class,
+})
 public class WebConfig implements WebMvcConfigurer {
 
     @Bean
