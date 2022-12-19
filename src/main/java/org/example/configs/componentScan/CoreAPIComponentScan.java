@@ -9,15 +9,8 @@ import java.util.List;
 
 @ComponentScan(basePackages = {
         "com.example",
+        "org.example"
 })
 @Configuration
 public class CoreAPIComponentScan {
-
-    @Bean
-    public  List<String> getList() {
-        List<String > lst = new ArrayList<>();
-        lst.add("1");
-        lst.add("2");
-        return lst;
-    }
 }

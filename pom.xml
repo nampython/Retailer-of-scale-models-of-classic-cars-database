@@ -14,26 +14,33 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <eyeglass-dao>13.05.20</eyeglass-dao>
         <lombok-core>1.18.20</lombok-core>
+        <springfox-swagger2>3.0.0</springfox-swagger2>
+        <springfox-swagger-ui>3.0.0</springfox-swagger-ui>
+        <spring.boot>2.5.14</spring.boot>
+        <hikaricp>4.0.3</hikaricp>
     </properties>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.6.4</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <version>${spring.boot}</version>
+        <relativePath/>
     </parent>
-    <!--  dependencies  -->
     <dependencies>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-boot-starter</artifactId>
+            <version>${springfox-swagger2}</version>
+        </dependency>
         <dependency>
             <groupId>com.zaxxer</groupId>
             <artifactId>HikariCP</artifactId>
-            <version>4.0.3</version>
+            <version>${hikaricp}</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok-core}</version>
-            <!--            <scope>provided</scope>-->
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -44,20 +51,15 @@
             <artifactId>eyeglass-dao</artifactId>
             <version>${eyeglass-dao}</version>
         </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-            <version>5.3.20</version>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>3.0.1</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework</groupId>-->
+<!--            <artifactId>spring-webmvc</artifactId>-->
+<!--            <version>5.3.20</version>-->
+<!--        </dependency>-->
 <!--        <dependency>-->
 <!--            <groupId>javax.servlet</groupId>-->
-<!--            <artifactId>jstl</artifactId>-->
-<!--            <version>1.2</version>-->
+<!--            <artifactId>javax.servlet-api</artifactId>-->
+<!--            <version>3.0.1</version>-->
 <!--        </dependency>-->
     </dependencies>
 
