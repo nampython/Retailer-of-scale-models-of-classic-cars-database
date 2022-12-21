@@ -46,9 +46,14 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.example</groupId>-->
+<!--            <artifactId>eyeglass-dao</artifactId>-->
+<!--            <version>${eyeglass-dao}</version>-->
+<!--        </dependency>-->
         <dependency>
-            <groupId>com.example</groupId>
-            <artifactId>eyeglass-dao</artifactId>
+            <groupId>org.example</groupId>
+            <artifactId>logic</artifactId>
             <version>${eyeglass-dao}</version>
         </dependency>
 <!--        <dependency>-->
