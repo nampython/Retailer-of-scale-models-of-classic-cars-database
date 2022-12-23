@@ -1,7 +1,11 @@
 package org.example.service.productlines;
 
-import org.example.responseData.ProductLineResponseData;
+import com.example.domain.productlinedomain.ProductLineConfig;
+import org.example.responseData.productlineResponse.ProductLineResponseData;
+
+import java.lang.reflect.InvocationTargetException;
 
 public interface ProductLineServiceLogic {
-    public ProductLineResponseData getAllProductLines();
+    public ProductLineResponseData getAllProductLines() throws NoSuchFieldException, InvocationTargetException, NoSuchMethodException, IllegalAccessException, InstantiationException;
+    public ProductLineResponseData saveProductLines(ProductLineConfig productLineConfig);
 }

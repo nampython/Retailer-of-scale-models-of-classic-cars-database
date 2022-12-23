@@ -1,4 +1,4 @@
-package org.example.responseData;
+package org.example.responseData.productlineResponse;
 
 import com.example.Excercise1.utils.BaseAjaxResponse;
 import com.example.domain.productlinedomain.ProductLineConfig;

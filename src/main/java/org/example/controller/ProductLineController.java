@@ -1,12 +1,15 @@
 package org.example.controller;
 
-import org.example.responseData.ProductLineResponseData;
+import com.example.domain.productlinedomain.ProductLineConfig;
+import org.example.responseData.productlineResponse.ProductLineResponseData;
 import org.example.service.productlines.ProductLineServiceLogic;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.lang.reflect.InvocationTargetException;
 
 import static org.example.constants.restURIConstants.productlines.ProductLinesRestURIConstants.GET_ALL_PRODUCT_LINES;
+import static org.example.constants.restURIConstants.productlines.ProductLinesRestURIConstants.SAVE_PRODUCT_LINES;
 
 @RestController
 public class ProductLineController {
@@ -23,7 +26,12 @@ public class ProductLineController {
      * @return
      */
     @GetMapping(value = GET_ALL_PRODUCT_LINES)
-    public ProductLineResponseData getAllProductLines() {
+    public ProductLineResponseData getAllProductLines() throws NoSuchFieldException, InvocationTargetException, NoSuchMethodException, IllegalAccessException, InstantiationException {
         return productLineServiceLogic.getAllProductLines();
+    }
+
+    @PostMapping(value = SAVE_PRODUCT_LINES)
+    public ProductLineResponseData saveProductLines(@RequestBody ProductLineConfig productLineConfig) {
+        return this.productLineServiceLogic.saveProductLines(productLineConfig);
     }
 }
