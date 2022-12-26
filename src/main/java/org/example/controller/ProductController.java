@@ -1,15 +1,15 @@
 package org.example.controller;
 
 import org.example.responseData.productsResponse.ProductEntityResponseData;
+import org.example.responseData.productsResponse.ProductWithLineEntityResponseData;
 import org.example.service.products.ProductServiceLogic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.lang.reflect.InvocationTargetException;
+import static org.example.constants.restURIConstants.RestURIConstants.GET_ALL_PRODUCTS;
+import static org.example.constants.restURIConstants.RestURIConstants.GET_ALL_PRODUCT_WITH_LINES;
 
-import static org.example.constants.restURIConstants.productlines.ProductLinesRestURIConstants.GET_ALL_PRODUCT_LINES;
-import static org.example.constants.restURIConstants.products.ProductsRestURIConstants.GET_ALL_PRODUCTS;
 
 @RestController
 public class ProductController {
@@ -21,7 +21,12 @@ public class ProductController {
     }
 
     @GetMapping(value = GET_ALL_PRODUCTS)
-    public ProductEntityResponseData getAllProductEntities() throws NoSuchFieldException, InvocationTargetException, NoSuchMethodException, IllegalAccessException, InstantiationException {
+    public ProductEntityResponseData getAllProductEntities() {
         return this.productServiceLogic.getAllProductEntities();
+    }
+
+    @GetMapping(value = GET_ALL_PRODUCT_WITH_LINES)
+    public ProductWithLineEntityResponseData getProductWithLineEntity() {
+        return this.productServiceLogic.getProductWithLineEntity();
     }
 }

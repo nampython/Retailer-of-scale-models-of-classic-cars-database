@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.lang.reflect.InvocationTargetException;
 
-import static org.example.constants.restURIConstants.productlines.ProductLinesRestURIConstants.GET_ALL_PRODUCT_LINES;
-import static org.example.constants.restURIConstants.productlines.ProductLinesRestURIConstants.SAVE_PRODUCT_LINES;
+import static org.example.constants.restURIConstants.RestURIConstants.GET_ALL_PRODUCT_LINES;
+import static org.example.constants.restURIConstants.RestURIConstants.SAVE_PRODUCT_LINES;
 
 @RestController
 public class ProductLineController {

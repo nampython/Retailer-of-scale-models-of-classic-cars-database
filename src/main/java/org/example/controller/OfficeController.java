@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.Map;
 
-import static org.example.constants.restURIConstants.offices.OfficesRestURIConstants.*;
+import static org.example.constants.restURIConstants.RestURIConstants.*;
 
 
 @RestController
@@ -33,7 +33,7 @@ public class OfficeController {
      * @param officeConfig
      * @return
      */
-    @PostMapping(value= SAVE_OFFICES )
+    @PostMapping(value= SAVE_OFFICES)
     public OfficeResponseData saveAllOffices(@RequestBody OfficeConfig officeConfig) {
         return officeLogic.saveOffices(officeConfig);
     }

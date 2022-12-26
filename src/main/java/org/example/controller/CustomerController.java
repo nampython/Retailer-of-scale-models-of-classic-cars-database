@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import static org.example.constants.restURIConstants.customers.CustomersRestURIConstants.GET_ALL_CUSTOMERS;
+import static org.example.constants.restURIConstants.RestURIConstants.GET_ALL_CUSTOMERS;
 
 @RestController
 public class CustomerController {

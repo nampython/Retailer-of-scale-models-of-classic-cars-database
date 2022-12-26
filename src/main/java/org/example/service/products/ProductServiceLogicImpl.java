@@ -1,8 +1,10 @@
 package org.example.service.products;
 
+import com.example.domain.productdomain.ProductWithLinesConfig;
 import com.example.domain.productdomain.ProductsEntityConfig;
 import com.example.services.products.ProductLogic;
 import org.example.responseData.productsResponse.ProductEntityResponseData;
+import org.example.responseData.productsResponse.ProductWithLineEntityResponseData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,10 +19,18 @@ public class ProductServiceLogicImpl implements ProductServiceLogic{
     }
 
     @Override
-    public ProductEntityResponseData getAllProductEntities() throws NoSuchFieldException, InvocationTargetException, NoSuchMethodException, IllegalAccessException, InstantiationException {
+    public ProductEntityResponseData getAllProductEntities() {
         ProductEntityResponseData productEntityResponseData = new ProductEntityResponseData();
-        ProductsEntityConfig allProductEntities = productLogic.getAllProductEntities();
+        ProductsEntityConfig allProductEntities = this.productLogic.getAllProductEntities();
         productEntityResponseData.setProductsEntityConfig(allProductEntities);
         return productEntityResponseData;
+    }
+
+    @Override
+    public ProductWithLineEntityResponseData getProductWithLineEntity() {
+        ProductWithLineEntityResponseData productWithLineEntityResponseData = new ProductWithLineEntityResponseData();
+        ProductWithLinesConfig productWithLinesConfig = this.productLogic.getProductWithLines();
+        productWithLineEntityResponseData.setProductWithLinesConfig(productWithLinesConfig);
+        return productWithLineEntityResponseData;
     }
 }
