@@ -21,5 +21,9 @@ public class RestURIConstants {
 
     // Orders
     public static final String GET_ALL_ORDER_DETAILS_WITH_CUSTOMERS = API_V1 +  "/getOrderDetailsCustomers";
+    public static final String GET_ALL_ORDER_TOTAL_YEAR = API_V1 +  "/getOrderTotalYear";
+
+    // Employee
+    public static final String GET_ALL_EMPLOYEE_CUSTOMER_PAYMENT = API_V1 +  "/getEmployeeCustomerPayment";
 
 }
