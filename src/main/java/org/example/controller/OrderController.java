@@ -31,5 +31,4 @@ public class OrderController {
     public OrderTotalYearResponseData getOrderTotalYear(@RequestParam String status,  @RequestParam int year) {
         return orderDetailsServiceLogic.getOrderTotalYear(Arrays.asList(status, year));
     }
-
 }

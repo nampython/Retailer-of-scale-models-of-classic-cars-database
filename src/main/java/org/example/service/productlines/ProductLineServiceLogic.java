@@ -6,6 +6,6 @@ import org.example.responseData.productlineResponse.ProductLineResponseData;
 import java.lang.reflect.InvocationTargetException;
 
 public interface ProductLineServiceLogic {
-    public ProductLineResponseData getAllProductLines() throws NoSuchFieldException, InvocationTargetException, NoSuchMethodException, IllegalAccessException, InstantiationException;
+    public ProductLineResponseData getAllProductLines();
     public ProductLineResponseData saveProductLines(ProductLineConfig productLineConfig);
 }

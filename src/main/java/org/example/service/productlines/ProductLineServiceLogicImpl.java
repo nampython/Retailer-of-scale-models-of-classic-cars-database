@@ -21,7 +21,7 @@ public class ProductLineServiceLogicImpl implements ProductLineServiceLogic{
     }
 
     @Override
-    public ProductLineResponseData getAllProductLines() throws NoSuchFieldException, InvocationTargetException, NoSuchMethodException, IllegalAccessException, InstantiationException {
+    public ProductLineResponseData getAllProductLines() {
         ProductLineResponseData productLineResponseData = new ProductLineResponseData();
         ProductLineConfig allProductLines = this.productLineLogic.getAllProductLines();
         productLineResponseData.setProductLineConfig(allProductLines);

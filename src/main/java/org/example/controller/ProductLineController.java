@@ -13,7 +13,6 @@ import static org.example.constants.restURIConstants.RestURIConstants.SAVE_PRODU
 
 @RestController
 public class ProductLineController {
-
     private final ProductLineServiceLogic productLineServiceLogic;
 
     @Autowired

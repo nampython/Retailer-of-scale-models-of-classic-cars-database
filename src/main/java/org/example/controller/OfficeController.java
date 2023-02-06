@@ -48,15 +48,4 @@ public class OfficeController {
         return this.officeLogic.getOfficeByCodeId(Integer.parseInt(id));
     }
 
-    /**
-     *
-     * @param pathVariables
-     * @return
-     */
-    @GetMapping(value= "/api/v1/{officecode}/{city}")
-    public String getOfficeByPathVariable(@PathVariable Map<String, String> pathVariables) {
-        String officeCode = pathVariables.get("officecode");
-        String city = pathVariables.get("city");
-        return officeCode + "----" + city;
-    }
 }

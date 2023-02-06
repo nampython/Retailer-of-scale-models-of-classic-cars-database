@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class EmployeeServiceLogicImpl implements EmployeeServiceLogic {
-
     private final EmployeeLogic employeeLogic;
     @Autowired
     public EmployeeServiceLogicImpl(EmployeeLogic employeeLogic) {

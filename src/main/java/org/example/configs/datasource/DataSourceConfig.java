@@ -12,9 +12,7 @@ import javax.sql.DataSource;
 
 @Configuration
 public class DataSourceConfig {
-
     private final Environment env;
-
     @Autowired
     public DataSourceConfig(Environment env) {
         this.env = env;
