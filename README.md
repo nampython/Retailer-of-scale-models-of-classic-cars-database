@@ -1,3 +1,20 @@
+<h1 align="center">
+  <a href="https://github.com/nampython/IoC-Container">
+    <img src="1675173432crow-bird.svg" alt="Logo" width="125" height="125">
+  </a>
+</h1>
+
+<div align="center">
+  Retailer of Scale Models of Classic Cars
+  <br />
+  <br />
+  <a href="https://github.com/nampython/Retailer-of-scale-models-of-classic-cars-database/issues/new?assignees=&labels=bug&template=bug_report.md&title=">Report a Bug</a>
+  ·
+  <a href="https://github.com/nampython/Retailer-of-scale-models-of-classic-cars-database/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=">Request a Feature</a>
+  .
+  <a href="https://github.com/nampython/IoC-Container/discussions">Ask a Question</a>
+</div>
+
 # Retailer of scale models of classic cars database
 I created a project to query data based on data simple (). It mainly uses JDBC to query data and is divided to 3 modules (App, Logic, DAO). This project helps to learn how to write some important functions to query, process, and mapping data and how to organize your code. Apply  knowledge based on the tutorial at  https://www.mysqltutorial.org/mysql-basics/ including query data, join table, prepared statement, Stored Procedures
 
