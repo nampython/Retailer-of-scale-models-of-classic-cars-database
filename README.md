@@ -12,7 +12,7 @@
   ·
   <a href="https://github.com/nampython/Retailer-of-scale-models-of-classic-cars-database/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=">Request a Feature</a>
   .
-  <a href="https://github.com/nampython/IoC-Container/discussions">Ask a Question</a>
+  <a href="https://github.com/nampython/Retailer-of-scale-models-of-classic-cars-database/discussions">Ask a Question</a>
 </div>
 
 # Retailer of scale models of classic cars database
