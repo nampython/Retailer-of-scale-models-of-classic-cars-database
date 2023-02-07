@@ -16,7 +16,7 @@
 </div>
 
 # Retailer of scale models of classic cars database
-I created a project to query data based on data simple (). It mainly uses JDBC to query data and is divided to 3 modules (App, Logic, DAO). This project helps to learn how to write some important functions to query, process, and mapping data and how to organize your code. Apply  knowledge based on the tutorial at  https://www.mysqltutorial.org/mysql-basics/ including query data, join table, prepared statement, Stored Procedures
+I created this project to query data based on simple data Retailer of scale models of classic cars database. It mainly uses JDBC to query data and is divided into 3 modules (App, Logic, DAO). This project helps to learn how to write some important functions to query, process, and mapping data and how to organize your code. Apply  knowledge based on the tutorial at  https://www.mysqltutorial.org/mysql-basics/ including query data, join table, prepared statement, Stored Procedures
 
 ## Table of Contents
 * [General Information](#general-information)
@@ -41,7 +41,7 @@ Contain the logic business of the app. This module uses the created functions in
 This module contains all of the configs for project like Datasource, Swagger configs and contains a ComponentScan class to scan all of the components in the project. Besides, it contains some API endpoint to expose to the client.
 
 ## Prerequisites
-**TODO:**
+Before trying or learning something, we need to give some prerequisites not only for this but for any you do. Below are several basic requirements
 - Learned tutorials at h[ttps://www.mysqltutorial.org/mysql-stored-procedure-tutorial.aspx](https://www.mysqltutorial.org/mysql-stored-procedure-tutorial.aspx)
 - Having aware of JDBC [https://docs.oracle.com/javase/tutorial/jdbc/basics/index.html](https://docs.oracle.com/javase/tutorial/jdbc/basics/index.html)
 - Basic Spring Core
