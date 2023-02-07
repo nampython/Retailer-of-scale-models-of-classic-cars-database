@@ -11,24 +11,17 @@ I created a project to query data based on data simple (). It mainly uses JDBC t
 ## General Information
 My goal for this project is just simply leaning the components of a real project when you could work as a Java developer. This project is divided into 3 modules:
 
-### **Dao**
+### **Dao:**  https://github.com/nampython/dao.git
 
 This module Interacts directly with JDBC to query data. **Create functions to cover all possible cases in the case of getting data and saving data**
 
-### **Logic**
+### **Logic**: https://github.com/nampython/logic.git
 
 Contain the logic business of the app. This module uses the created functions in Dao to query data and write logic business based on the requirements
 
-### **App**
+### **App**: https://github.com/nampython/Retailer-of-scale-models-of-classic-cars-database.git
 
 This module contains all of the configs for project like Datasource, Swagger configs and contains a ComponentScan class to scan all of the components in the project. Besides, it contains some API endpoint to expose to the client.
-
-
-
-
-
-
-
 
 ## Prerequisites
 **TODO:**
